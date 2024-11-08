@@ -26,11 +26,9 @@ router.post('/signup', async (req, res) => {
       aadharCardNumber: data.aadharCardNumber,
     });
     if (existingUser) {
-      return res
-        .status(400)
-        .json({
-          error: 'User with the same Aadhar Card Number already exists',
-        });
+      return res.status(400).json({
+        error: 'User with the same Aadhar Card Number already exists',
+      });
     }
 
     // Create a new User document using the Mongoose model
