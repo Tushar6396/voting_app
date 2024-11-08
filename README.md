@@ -16,29 +16,29 @@ This is a backend application for a voting system where users can vote for candi
 
 ### Sign Up
 
-- POST /signup : endpoint to sign up a new user.
+- POST /signup: endpoint to sign up a new user.
 
 ### Login
 
-- POST /login : endpoint to login an existing user.
+- POST /login: endpoint to login an existing user.
 
 ## CANDIDATES
 
 ### Get Candidates
 
-- GET /candidate : endpoint to get the list of the candidates.
+- GET /candidate: endpoint to get the list of the candidates.
 
 ### Add Candidate
 
-- POST /candidate : adds a new candidate(_Only Admin is authorized_).
+- POST /candidate: adds a new candidate(_Only Admin is authorized_).
 
 ### Update Candidate
 
-- PUT /candidate/:id : Updates a candidate by using id(_Only admin is authorized_).
+- PUT /candidate/:id: Updates a candidate by using id(_Only admin is authorized_).
 
 ### Delete Candidate
 
-- DELETE /candidate/:id : Deletes a candidate by id(_Only admin is authorized_).
+- DELETE /candidate/:id: Deletes a candidate by id(_Only admin is authorized_).
 
 ## VOTING
 
@@ -55,3 +55,7 @@ This is a backend application for a voting system where users can vote for candi
 ### Get Profile
 
 - GET /user/profile: Get user profile information
+
+### Update Password
+
+- PUT /user/profile/password: Update the password of the user
